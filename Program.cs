@@ -103,3 +103,11 @@
 
 // est1.MostrarInformacion(); // Muestra sus cursos
 // curso1.MostrarInformacion(); // Muestra a Carlos como inscrito
+
+
+
+
+
+
+
+System.Console.WriteLine("klk");
