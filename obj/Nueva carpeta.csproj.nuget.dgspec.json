@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oskar\\Desktop\\Nueva carpeta\\Nueva carpeta.csproj": {}
+    "C:\\Users\\oskar\\Desktop\\POO (PROJECT #1)\\Nueva carpeta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oskar\\Desktop\\Nueva carpeta\\Nueva carpeta.csproj": {
+    "C:\\Users\\oskar\\Desktop\\POO (PROJECT #1)\\Nueva carpeta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oskar\\Desktop\\Nueva carpeta\\Nueva carpeta.csproj",
+        "projectUniqueName": "C:\\Users\\oskar\\Desktop\\POO (PROJECT #1)\\Nueva carpeta.csproj",
         "projectName": "Nueva carpeta",
-        "projectPath": "C:\\Users\\oskar\\Desktop\\Nueva carpeta\\Nueva carpeta.csproj",
+        "projectPath": "C:\\Users\\oskar\\Desktop\\POO (PROJECT #1)\\Nueva carpeta.csproj",
         "packagesPath": "C:\\Users\\oskar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oskar\\Desktop\\Nueva carpeta\\obj\\",
+        "outputPath": "C:\\Users\\oskar\\Desktop\\POO (PROJECT #1)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
