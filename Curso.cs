@@ -1,0 +1,7 @@
+namespace SistemaGestióndeEstudiantesCursos
+{
+    class Curso
+    {
+        
+    }
+}
