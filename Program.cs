@@ -38,11 +38,9 @@
 
 // No permite inscribirse dos veces al mismo curso.
 
-
 // RemoverCurso(Curso curso)
 
 // Solo si ya está inscrito.
-
 
 // MostrarInformacion()
 
@@ -84,10 +82,6 @@
 // Muestra info + cantidad de estudiantes inscritos.
 
 // ---
-
-// 3. Clase opcional: Calificacion
-
-// Podrías agregarla más adelante si quieres registrar notas por curso y estudiante.
 
 // ---
 
