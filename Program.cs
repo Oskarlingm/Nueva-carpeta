@@ -1,107 +1,91 @@
-﻿// 🧠 Ejercicio Avanzado: Sistema de Gestión de Estudiantes y Cursos
+﻿namespace SistemaGestióndeEstudiantesCursos
+{
+    class Program
+    {
+        public static void Main()
+        {
+            // ===== CURSOS =====
+            Curso curso1 = new Curso("POO101", "Programación Orientada a Objetos", 4);
+            Curso curso2 = new Curso("BD102", "Base de Datos", 3);
+            Curso curso3 = new Curso("WEB103", "Desarrollo Web", 4);
+            Curso curso4 = new Curso("ALG104", "Algoritmos y Estructuras", 5);
+            Curso curso5 = new Curso("RED105", "Redes de Computadoras", 3);
+            Curso curso6 = new Curso("SO106", "Sistemas Operativos", 4);
+            Curso curso7 = new Curso("IA107", "Introducción a la IA", 4);
+            Curso curso8 = new Curso("SEC108", "Seguridad Informática", 3);
+            Curso curso9 = new Curso("MOV109", "Desarrollo Móvil", 4);
+            Curso curso10 = new Curso("ARQ110", "Arquitectura de Computadores", 5);
 
-// 🎯 Objetivo:
+            // ===== ESTUDIANTES =====
+            Estudiante est1 = new Estudiante("2022-001", "Carlos", "Martínez", 18);
+            Estudiante est2 = new Estudiante("2022-002", "Ana", "López", 19);
+            Estudiante est3 = new Estudiante("2022-003", "Pedro", "Gómez", 20);
+            Estudiante est4 = new Estudiante("2022-004", "Laura", "Pérez", 18);
+            Estudiante est5 = new Estudiante("2022-005", "Javier", "Rodríguez", 21);
+            Estudiante est6 = new Estudiante("2022-006", "María", "Fernández", 22);
+            Estudiante est7 = new Estudiante("2022-007", "Luis", "Ramírez", 20);
+            Estudiante est8 = new Estudiante("2022-008", "Sofía", "Torres", 19);
+            Estudiante est9 = new Estudiante("2022-009", "Andrés", "Morales", 18);
+            Estudiante est10 = new Estudiante("2022-010", "Valentina", "Jiménez", 19);
 
-// Modelar un sistema educativo donde se puedan registrar estudiantes, asignarlos a cursos y llevar un control de sus calificaciones.
+            // ===== INSCRIPCIONES =====
+            // Carlos en POO101 y BD102
+            est1.InscribirCurso(curso1);
+            curso1.AgregarEstudiante(est1);
+            est1.InscribirCurso(curso2);
+            curso2.AgregarEstudiante(est1);
+            est1.InscribirCurso(curso3);
+            curso3.AgregarEstudiante(est1);
+            est1.InscribirCurso(curso4);
+            curso4.AgregarEstudiante(est1);
+            est1.RemoverCurso(curso1);
+            curso1.RemoverEstudiante(est1);
 
-// ---
+            // Ana en WEB103 y ALG104
+            est2.InscribirCurso(curso3);
+            curso3.AgregarEstudiante(est2);
+            est2.InscribirCurso(curso4);
+            curso4.AgregarEstudiante(est2);
 
-// 🔧 Clases involucradas:
+            // Pedro en RED105 y SO106
+            est3.InscribirCurso(curso5);
+            curso5.AgregarEstudiante(est3);
+            est3.InscribirCurso(curso6);
+            curso6.AgregarEstudiante(est3);
 
-// 1. Estudiante
+            // Laura en IA107 y SEC108
+            est4.InscribirCurso(curso7);
+            curso7.AgregarEstudiante(est4);
+            est4.InscribirCurso(curso8);
+            curso8.AgregarEstudiante(est4);
 
-// Atributos privados:
+            // Javier en MOV109 y ARQ110
+            est5.InscribirCurso(curso9);
+            curso9.AgregarEstudiante(est5);
+            est5.InscribirCurso(curso10);
+            curso10.AgregarEstudiante(est5);
 
-// matricula (string)
+            // Otros estudiantes en distintos cursos
+            est6.InscribirCurso(curso1);
+            curso1.AgregarEstudiante(est6);
 
-// nombre (string)
+            est7.InscribirCurso(curso2);
+            curso2.AgregarEstudiante(est7);
 
-// apellido (string)
+            est8.InscribirCurso(curso3);
+            curso3.AgregarEstudiante(est8);
 
-// edad (int)
+            est9.InscribirCurso(curso4);
+            curso4.AgregarEstudiante(est9);
 
-// cursosInscritos (List<Curso>)
+            est10.InscribirCurso(curso5);
+            curso5.AgregarEstudiante(est10);
 
-
-// Validaciones:
-
-// La matrícula no puede estar vacía.
-
-// Edad debe ser ≥ 16
-
-// El nombre y apellido no pueden estar vacíos.
-
-
-// Métodos públicos:
-
-// InscribirCurso(Curso curso)
-
-// No permite inscribirse dos veces al mismo curso.
-
-// RemoverCurso(Curso curso)
-
-// Solo si ya está inscrito.
-
-// MostrarInformacion()
-
-// Muestra los datos del estudiante + nombres de los cursos.
-
-// ---
-
-// 2. Curso
-
-// Atributos privados:
-
-// codigo (string)
-
-// nombre (string)
-
-// creditos (int)
-
-// estudiantesInscritos (List<Estudiante>)
-
-
-// Validaciones:
-
-// Código y nombre no pueden estar vacíos.
-
-// Créditos deben ser entre 1 y 5.
-
-
-// Métodos públicos:
-
-// AgregarEstudiante(Estudiante estudiante)
-
-// Agrega solo si no está ya inscrito.
-
-
-// RemoverEstudiante(Estudiante estudiante)
-
-// MostrarInformacion()
-
-// Muestra info + cantidad de estudiantes inscritos.
-
-// ---
-
-// ---
-
-// 💡 Ejemplo de uso:
-
-// Curso curso1 = new Curso("POO101", "Programación Orientada a Objetos", 4);
-// Curso curso2 = new Curso("BD102", "Base de Datos", 3);
-
-// Estudiante est1 = new Estudiante("2022-001", "Carlos", "Martínez", 18);
-
-// est1.InscribirCurso(curso1);
-// curso1.AgregarEstudiante(est1);
-
-// est1.MostrarInformacion(); // Muestra sus cursos
-// curso1.MostrarInformacion(); // Muestra a Carlos como inscrito
-
-
-
-
-
-
-
-System.Console.WriteLine("klk");
+            // ===== MOSTRAR INFORMACIÓN =====
+            est1.MostrarInformacion();
+            est2.MostrarInformacion();
+            curso1.MostrarInformacion();
+            curso3.MostrarInformacion();
+        }
+    }
+}
