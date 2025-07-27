@@ -70,15 +70,18 @@ namespace SistemaGestióndeEstudiantesCursos
 
         public void MostrarInformacion()
         {
+            System.Console.WriteLine(" ");
+            System.Console.WriteLine("- MOSTRANDO INFORMACION DE ESTUDIANTE -");
+            System.Console.WriteLine(" ");
             System.Console.WriteLine($@"Matricula: {_matricula}
-            Nombre: {_apellido}
+            Nombre: {_nombre}
             Apellido: {_apellido}
             Edad: {_edad}");
 
             System.Console.WriteLine("LISTA DE CURSOS:");
             foreach (var curso in _cursosInscritos)
             {
-                System.Console.WriteLine(curso.nombre);
+                curso.getNombre();
             }
 
 
@@ -86,8 +89,6 @@ namespace SistemaGestióndeEstudiantesCursos
 
 
     }
-
-
 
     // Edad debe ser ≥ 16
     // El nombre y apellido no pueden estar vacíos.
@@ -100,12 +101,3 @@ namespace SistemaGestióndeEstudiantesCursos
 }
 
 
-
-
-
-
-
-
-
-
-}
